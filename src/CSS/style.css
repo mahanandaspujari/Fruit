@@ -1,0 +1,245 @@
+/* /* Navbar container */
+
+.navbar {
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    z-index: 10;
+    
+  }
+  #navbarNavDropdown{
+    background-color: #5293B7; /* Dark background */
+
+  }
+  
+  /* Navbar links */
+  .navbar-nav .nav-item .nav-link {
+    color: white; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #5293B7; /* Highlight color on hover */
+    /* background-color: rgba(255, 255, 255, 0.1); Subtle background change */
+    border-radius: 5px; /* Rounded corners on hover */
+  }
+  
+  /* Navbar toggler (hamburger icon) */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    color: white;
+    background: none;
+  }
+  
+  .navbar-toggler .fas {
+    font-size: 24px; /* Adjust icon size */
+    color: black;
+  }
+  
+  /* Responsive menu */
+  .collapse {
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav.snip1217 {
+    margin-left: auto; /* Align menu items to the right */
+  }
+  
+  /* Sticky Navbar */
+  .section.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .home{
+    color: white;
+  }
+  .homeinfo{
+    background-color: #282E40;
+    height: 580px;
+    padding: 20px;
+  }
+  .home img{
+    width: 320px;
+    height: 390px;
+    position: relative;
+    top: -270px;
+    padding: 10px;
+
+  }
+
+  .btn1{
+    padding: 20px;
+    background-color: #282E40;
+    border: none;
+    color: white;
+  }
+  
+  .about{
+    margin-top: -250px;
+  }
+
+  .about img{
+    width: 320px;
+    height: 360px;
+    padding: 10px;
+
+  }
+  .about-section{
+    padding: 20px;
+  }
+
+  .fruits{
+    background-color: #282E40;
+    color: white;
+    /* width: 94%; */
+  }
+  .fruit-section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .fruit-section img{
+    width: 100%;
+  }
+  
+  .blog-section{
+    width: 100%;
+    padding: 20px;
+    background-color: #282E40;
+  }
+  .blog-section p{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  .blog-section img{
+    width: 100%;
+  }
+
+  .contact{
+    padding: 20px;
+    background-color: #282E40;
+    margin-top: 50px;
+    color: white;
+    line-height: 30px;
+  }
+  .newsletter{
+    line-height: 50px;
+    width: 100%;
+  }
+  .newsletter input{
+    width: 100%;
+  }
+  
+  .post-section li{
+    list-style-type: none;
+    list-style-position: inside;
+
+  }
+  .pages-section a{
+    text-decoration: none;
+    color: white;
+  }
+  .p1{
+      list-style-image: url('../images/f_b1.png');
+  }
+  .p2{
+    list-style-image: url('../images/f_b2.png');
+}
+.p3{
+  list-style-image: url('../images/f_b3.png');
+}
+
+  .footer{
+    text-align: center;
+    background-color: #046882;
+    color: white;
+    padding: 10px;
+  }
+  /* Mobile styles */
+  @media (min-width: 768px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack menu items vertically on small screens */
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 5px 0;
+    }
+  
+    .homeinfo{
+      height: 330px;
+      clip-path: polygon(0% 0%, 53% 0, 80% 56%, 100% 100%, 0% 100%);
+    }
+    .home img{
+      /* width: 0%; */
+      top: 0;
+      left:-50px;
+    }
+    .about{
+      margin-top: -0px;
+    }
+    
+    .fruit-section{
+      gap: 30px;
+      justify-content: end;
+    }
+    .fruit-section div{
+      width: 30%;
+    }
+    .blog-section {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .blog-section div{
+       width: 30%;
+    }
+    .contact{
+      padding: 100px;
+    }
+   
+  }
+
+  @media(min-width:992px){
+    #navbarNavDropdown{
+      background-color: white; /* Dark background */
+  
+    }
+    .navbar-nav .nav-item .nav-link {
+      color: black;
+    }
+    .about{
+      padding: 50px;
+    }
+    .about img{
+      width: 420px;
+      height: 420px;
+      padding: 10px;
+  
+    }
+    .about{
+      justify-content: center;
+      gap: 50px;
+    }
+    .about-section{
+      width: 40%;
+    }
+    
+    .contact{
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+    }
+  }
